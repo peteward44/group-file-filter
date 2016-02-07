@@ -124,7 +124,7 @@ function calculate( rootInputPath, options, callback ) {
 	var completeGroupList = calculateAllGroups( rootInputPath, options, changedDirs.report.root );
 	// work out which atlas have been modified
 	var changedGroups = calculateChangedGroups( completeGroupList, changedDirs );
-	return callback( null, completeGroupList, changedGroups );
+	return callback( null, completeGroupList, changedGroups, options.manifest );
 }
 
 
